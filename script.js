@@ -125,10 +125,6 @@ const form_text = document.getElementById("textarea");
 
 function validate() {
     var save = false;
-    validateDescription();
-    validateSubject();
-    validateEmail();
-    validateName();
     if (validateName() && validateEmail() && validateSubject() && validateDescription() == true) {
         // submitForm();
         save = true;
