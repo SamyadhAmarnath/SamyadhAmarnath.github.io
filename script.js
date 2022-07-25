@@ -84,10 +84,11 @@ function hidePopup() {
 var graph = document.getElementById("graphDes")
 var gwork = document.getElementById("graphWork")
 graph.addEventListener("click", function () {
-    graphWork.style.display = "block";
+    gwork.style.display = "block";
     document.getElementById("divCardDetails").style.display = "none";
     document.getElementById("uiDes").style.display = "none";
     document.getElementById("blender").style.display = "none";
+    document.getElementById("product").style.display="none";
 })
 // Web dev
 var web = document.getElementById("divWebDev")
@@ -97,6 +98,8 @@ web.addEventListener("click", function () {
     document.getElementById("graphWork").style.display = "none";
     document.getElementById("uiDes").style.display = "none";
     document.getElementById("blender").style.display = "none";
+    document.getElementById("product").style.display="none";
+
 })
 // ui/ux
 var ui = document.getElementById("uiCard")
@@ -106,6 +109,8 @@ ui.addEventListener("click", function () {
     document.getElementById("divCardDetails").style.display = "none";
     document.getElementById("graphWork").style.display = "none";
     document.getElementById("blender").style.display = "none";
+    document.getElementById("product").style.display="none";
+
 })
 // Blender
 var blend = document.getElementById("blendDesign")
@@ -115,6 +120,19 @@ blend.addEventListener("click", function () {
     document.getElementById("divCardDetails").style.display = "none";
     document.getElementById("graphWork").style.display = "none";
     document.getElementById("uiDes").style.display = "none";
+    document.getElementById("product").style.display="none";
+
+})
+
+// Product
+var prod = document.getElementById("prodes")
+var prod1 = document.getElementById("product")
+prod.addEventListener("click", function () {
+    prod1.style.display = "block"
+    document.getElementById("divCardDetails").style.display = "none";
+    document.getElementById("graphWork").style.display = "none";
+    document.getElementById("uiDes").style.display = "none";
+    document.getElementById("blender").style.display = "none";
 })
 
 // form validation
@@ -125,6 +143,7 @@ const form_text = document.getElementById("textarea");
 
 function validate() {
     var save = false;
+
     if (validateName() && validateEmail() && validateSubject() && validateDescription() == true) {
         // submitForm();
         save = true;

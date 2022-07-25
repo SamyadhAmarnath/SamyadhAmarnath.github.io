@@ -15,6 +15,9 @@ html{
     cursor: pointer;
     display: none;
 }
+.text-2{
+    font-family: cursive;
+}
 .max-width{
     max-width: 1920px;
     padding: 0 80px;
@@ -226,9 +229,9 @@ section .title::before{
     padding: 20px 25px;
     transition: all 0.3s ease;
 }
-.services .serv-content .card-serv:hover{
+/* .services .serv-content .card-serv:hover{
     background: crimson;
-}
+} */
 .services .serv-content .card-serv .box{
     transition: all 0.3s ease;
 }
@@ -245,10 +248,10 @@ section .title::before{
     padding: 10px;
     margin-bottom: 20px;
 }
-.services .serv-content .card-serv .text:hover{
+/* .services .serv-content .card-serv .text:hover{
     background: #fff;
     color: crimson;
-}
+} */
 /* skills */
 .skills .title::after{
 content: "What I know";
