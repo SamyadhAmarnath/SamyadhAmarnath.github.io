@@ -97,12 +97,12 @@ html {
 
 .home {
     display: flex;
-    background: url("images/Banner.png") no-repeat center;
+    background: url("images/banner-1.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .home .max-width {
@@ -203,6 +203,8 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .skills .skills-content {
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +260,9 @@ section .title {
 /* services */
 .services,
 .work {
-    background: #111;
+    /* background: #111; */
+    background-image: url(images/parallax.jpg);
+    background-attachment: fixed;
     color: white;
 }
 
@@ -634,6 +638,7 @@ section .title {
     background-color: crimson;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 
